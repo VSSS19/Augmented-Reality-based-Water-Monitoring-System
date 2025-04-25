@@ -13,9 +13,19 @@ this project apart is its use of AR through Unity, allowing users to scan a mark
 instantly see a 3D model of the water tank, complete with the current water level rendered 
 inside it. 
 
-This real-time, 3D visualization offers a better and more intuitive understanding of the tank’s 
-status compared to traditional displays. It also opens the door for further enhancements like 
-low-water alerts, automatic motor control, and mobile notifications. 
-Overall, this system shows how AR and IoT can work together to solve everyday problems. It 
-is a simple, cost-effective, and scalable solution that can be adapted for homes, farms, or 
-industrial water systems—making water management smarter and more connected.
+### Design Approach
+The core idea behind this project is to develop a smart and accessible system for monitoring 
+water levels using a combination of IoT and Augmented Reality (AR) technologies. The goal 
+is to offer users a simple yet powerful way to visualize and track water levels in real time, 
+helping them make better decisions about water usage. 
+
+To bring this idea to life, the system uses the ESP8266 (NodeMCU) microcontroller, which is 
+both affordable and energy-efficient, and comes with built-in Wi-Fi capabilities—making it 
+perfect for wireless communication. An ultrasonic sensor is used to detect the distance from 
+the sensor to the water’s surface, helping calculate the exact level of water in the tank. 
+
+All the collected data is sent to a cloud-based database, making it possible to access water 
+level information remotely. On the user’s side, an AR-based mobile application built with 
+Unity and Vuforia lets them see the water level in a virtual 3D tank just by scanning a marker. 
+This makes the data more interactive and easier to understand at a glance, even for people who 
+aren't tech-savvy.
